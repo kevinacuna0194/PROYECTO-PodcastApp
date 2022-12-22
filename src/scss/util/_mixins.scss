@@ -1,0 +1,6 @@
+@mixin bgImage($url, $color) {
+    background-image: linear-gradient(transparentize($color, 0.3%)  0%, transparentize($color, 0.3%) 100%), url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}

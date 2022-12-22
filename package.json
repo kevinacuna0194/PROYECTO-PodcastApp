@@ -1,0 +1,24 @@
+{
+  "name": "04-podcastapp",
+  "version": "0.1.0",
+  "description": "PODCAST FM - Sitio web de plataforma de Podcast en Bootstrap 5 y SASS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinacuna0194/PROYECTO-PodcastApp.git"
+  },
+  "author": "Kevin Acuña",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinacuna0194/PROYECTO-PodcastApp/issues"
+  },
+  "homepage": "https://github.com/kevinacuna0194/PROYECTO-PodcastApp#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.57.1"
+  }
+}

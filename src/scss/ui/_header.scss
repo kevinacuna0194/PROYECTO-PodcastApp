@@ -3,5 +3,15 @@
 
 .site-header {
     @include mixins.bgImage('../img/header.jpg', $secondary);
+
+    .logo {
+        max-width: 20rem;
+    }
+
+    .contenido {
+        h1 {
+
+        }
+    }
 }
 

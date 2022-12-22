@@ -1,5 +1,2 @@
-$azul: blue;
+@use '../custom' as *;
 
-body {
-    background-color: $azul;
-}

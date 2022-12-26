@@ -1,2 +1,4 @@
 @use 'util';
-@use 'ui';
+@use 'componentes';
+
+@use 'ui'; /** Primero utilidades, después componentes y finalmente ya la interfaz que hace uso tanto de componentes como de utilidades, es importante el orden. **/

@@ -10779,6 +10779,48 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.btn-header {
+  /* $background: 
+  $border:
+  $color: 
+  $hover-background:
+  $hover-border: 
+  $hover-color: */
+  /** BG, Border, Color Texto, HOVER: BG, Border, Texto */
+  --bs-btn-color: #313C4E;
+  --bs-btn-bg: #84D9BC;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-color: #1d242f;
+  --bs-btn-hover-bg: #5dcda7;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-focus-shadow-rgb: 49, 60, 78;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #9de1c9;
+  --bs-btn-active-border-color: rgba(255, 255, 255, 0.1);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #84D9BC;
+  --bs-btn-disabled-border-color: transparent;
+  /* @mixin button-size($padding-y, $padding-x, $font-size, $border-radius) */
+  --bs-btn-padding-y: 1rem;
+  --bs-btn-padding-x: 5rem;
+  --bs-btn-font-size: calc(1.325rem + 0.9vw);
+  --bs-btn-border-radius: 0;
+  font-weight: 700;
+  display: block;
+  margin-top: 1rem;
+}
+@media (min-width: 1200px) {
+  .btn-header {
+    --bs-btn-font-size: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .btn-header {
+    display: inline-block;
+  }
+}
+
 .site-header {
   background-image: linear-gradient(rgba(49, 60, 78, 0.7) 0%, rgba(49, 60, 78, 0.7) 100%), url("../img/header.jpg");
   background-repeat: no-repeat;
@@ -10819,4 +10861,6 @@ textarea.form-control-lg {
     font-size: 6rem;
   }
 }
+
+/** Primero utilidades, después componentes y finalmente ya la interfaz que hace uso tanto de componentes como de utilidades, es importante el orden. **/
 /*# sourceMappingURL=app.css.map */

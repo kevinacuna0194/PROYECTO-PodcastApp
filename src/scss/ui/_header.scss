@@ -1,5 +1,5 @@
 @use '../custom' as *;
-@use '../util/mixins' as m;
+@use '../utils/mixins' as m;
 
 .site-header {
     @include m.bgImage('../img/header.jpg', $secondary);

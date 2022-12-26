@@ -1,8 +1,8 @@
 @use '../custom' as *;
-@use '../util/mixins';
+@use '../util/mixins' as m;
 
 .site-header {
-    @include mixins.bgImage('../img/header.jpg', $secondary);
+    @include m.bgImage('../img/header.jpg', $secondary);
 
     .logo {
         max-width: 20rem;

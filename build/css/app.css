@@ -10946,7 +10946,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.btn-header {
+.btn-header, .boton-plan {
   /* $background: 
   $border:
   $color: 
@@ -10974,17 +10974,28 @@ textarea.form-control-lg {
   --bs-btn-font-size: calc(1.325rem + 0.9vw);
   --bs-btn-border-radius: 0;
   font-weight: 700;
+  text-decoration: none;
+  text-align: center;
   display: block;
   margin-top: 1rem;
 }
 @media (min-width: 1200px) {
-  .btn-header {
+  .btn-header, .boton-plan {
     --bs-btn-font-size: 2rem;
   }
 }
 @media (min-width: 768px) {
-  .btn-header {
+  .btn-header, .boton-plan {
     display: inline-block;
+  }
+}
+
+.boton-plan {
+  border: 1px solid #fff;
+}
+@media (min-width: 768px) {
+  .boton-plan {
+    display: block;
   }
 }
 

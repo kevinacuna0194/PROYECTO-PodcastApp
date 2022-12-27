@@ -14,12 +14,22 @@
     @include button-size(1rem, 5rem, 2rem, 0);
 
     font-weight: 700;
-    // text-decoration: none;
-    // text-align: center;
+    text-decoration: none;
+    text-align: center;
     display: block;
     margin-top: 1rem;
 
     @include media-breakpoint-up(md) {
         display: inline-block;
+    }
+}
+
+.boton-plan {
+    @extend .btn-header;
+
+    border: 1px solid $white;
+
+    @include media-breakpoint-up(md) {
+        display: block;
     }
 }

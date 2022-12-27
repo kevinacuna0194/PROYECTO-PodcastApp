@@ -11133,6 +11133,23 @@ textarea.form-control-lg {
 
 .plan {
   padding: 16rem 4rem 4rem 4rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+@media (min-width: 768px) {
+  .plan {
+    border: none;
+    transition: transform 300ms ease;
+  }
+}
+@media (min-width: 768px) and (prefers-reduced-motion: reduce) {
+  .plan {
+    transition: none;
+  }
+}
+@media (min-width: 768px) {
+  .plan:hover {
+    transform: scale(1.1);
+  }
 }
 .plan .precio {
   font-size: 1.8rem;
@@ -11156,6 +11173,9 @@ textarea.form-control-lg {
     margin-top: -5rem;
     margin-bottom: -5rem;
     border-radius: 2rem;
+    z-index: 100;
+    padding-top: calc(16rem + 5rem); /** Interpolación. Entonces esa forma va a detectar que esto es una variable y lo va a tomar su valor, no va a tomar el nombre directamente**/
+    background-position-y: calc(2rem + 5rem);
   }
 }
 .plan.pro {

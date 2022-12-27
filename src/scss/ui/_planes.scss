@@ -16,11 +16,21 @@
         text-transform: uppercase;
     }
 
+    &.inicio {
+        @include m.bgIcono('../img/icono_inicio.svg');
+    }
+
     &.negocio {
+        @include m.bgIcono('../img/icono_negocio.svg');
+        
         @include media-breakpoint-up(md) {
             margin-top: -5rem;
             margin-bottom: -5rem;
             border-radius: 2rem;
         }
+    }
+
+    &.pro {
+        @include m.bgIcono('../img/icono_pro.svg');
     }
 }

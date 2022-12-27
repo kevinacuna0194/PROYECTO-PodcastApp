@@ -11128,12 +11128,30 @@ textarea.form-control-lg {
   font-weight: 700;
   text-transform: uppercase;
 }
+.plan.inicio {
+  background-image: url("../img/icono_inicio.svg");
+  background-size: 10rem;
+  background-position: 50% 2rem;
+  background-repeat: no-repeat;
+}
+.plan.negocio {
+  background-image: url("../img/icono_negocio.svg");
+  background-size: 10rem;
+  background-position: 50% 2rem;
+  background-repeat: no-repeat;
+}
 @media (min-width: 768px) {
   .plan.negocio {
     margin-top: -5rem;
     margin-bottom: -5rem;
     border-radius: 2rem;
   }
+}
+.plan.pro {
+  background-image: url("../img/icono_pro.svg");
+  background-size: 10rem;
+  background-position: 50% 2rem;
+  background-repeat: no-repeat;
 }
 
 /** Primero utilidades, después componentes y finalmente ya la interfaz que hace uso tanto de componentes como de utilidades, es importante el orden. **/

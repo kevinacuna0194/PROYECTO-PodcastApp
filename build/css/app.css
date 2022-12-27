@@ -148,11 +148,11 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: calc(1.475rem + 2.7vw);
+  font-size: calc(1.425rem + 2.1vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -8041,7 +8041,7 @@ textarea.form-control-lg {
 }
 
 .fs-3 {
-  font-size: calc(1.475rem + 2.7vw) !important;
+  font-size: calc(1.425rem + 2.1vw) !important;
 }
 
 .fs-4 {
@@ -10902,7 +10902,7 @@ textarea.form-control-lg {
     font-size: 3.6rem !important;
   }
   .fs-3 {
-    font-size: 3.5rem !important;
+    font-size: 3rem !important;
   }
   .fs-4 {
     font-size: 3rem !important;
@@ -11099,6 +11099,41 @@ textarea.form-control-lg {
   background-color: #84D9BC;
   display: block;
   margin: -1.5rem 0 0 0;
+}
+
+.planes h2 {
+  color: #fff;
+  display: inline-block;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .planes h2 {
+    margin-top: 0;
+  }
+}
+.planes h2::after {
+  content: "";
+  height: 1rem;
+  width: 100%;
+  background-color: #84D9BC;
+  display: block;
+  margin: -1.5rem 0 0 0;
+}
+
+.plan {
+  padding: 16rem 4rem 4rem 4rem;
+}
+.plan .precio {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .plan.negocio {
+    margin-top: -5rem;
+    margin-bottom: -5rem;
+    border-radius: 2rem;
+  }
 }
 
 /** Primero utilidades, después componentes y finalmente ya la interfaz que hace uso tanto de componentes como de utilidades, es importante el orden. **/

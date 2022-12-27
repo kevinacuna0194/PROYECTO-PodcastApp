@@ -1,0 +1,26 @@
+@use '../custom' as *;
+@use '../utils/mixins' as m;
+
+.planes {
+    h2 {
+        @include m.headingBorder($white, $primary);
+    }
+}
+
+.plan {
+    padding: 16rem 4rem 4rem 4rem;
+
+    .precio {
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &.negocio {
+        @include media-breakpoint-up(md) {
+            margin-top: -5rem;
+            margin-bottom: -5rem;
+            border-radius: 2rem;
+        }
+    }
+}
